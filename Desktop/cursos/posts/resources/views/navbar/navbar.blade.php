@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
   <a class="navbar-brand" href="#">BLOGS Brian S.A</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,9 +9,6 @@
         <a class="nav-link" href="{{route('posts.index')}}">HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('posts.create')}}">CREA TU PUBLICACIÓN</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="{{route('articles.create')}}">Articulos</a>
       </li>
       <li class="nav-item dropdown">
@@ -19,9 +16,9 @@
           Sitios de interes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">tecnología</a>
-          <a class="dropdown-item" href="#">deporte</a>
-          <a class="dropdown-item" href="#">ciencia</a>
+          <a class="dropdown-item" href="https://www.xataka.com/">tecnología</a>
+          <a class="dropdown-item" href="http://www.espn.com.co/">deporte</a>
+          <a class="dropdown-item" href="https://www.investigacionyciencia.es/">ciencia</a>
         </div>
       </li>
     </ul>

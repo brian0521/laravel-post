@@ -5,7 +5,7 @@
 	<br>
 
 	<FONT FACE="impact" SIZE=6 COLOR="blue" >
- <h1 align="center">POSTS</h1></FONT>
+ <h1 align="center">POST DE INTERES</h1></FONT>
 
 	
 	<a href="{{route('posts.create')}}">

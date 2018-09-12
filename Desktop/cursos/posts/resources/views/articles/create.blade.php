@@ -3,7 +3,8 @@
 
 @section('index-content')
 
-	<h3>Crea tu Tuit articulo</h3>
+	<FONT FACE="impact" SIZE=4 COLOR="blue" >
+ <h1 align="center">Crea tu articulo y comparte!</h1></FONT>
 	<a href="{{route('articles.index')}}">Listar articulo</a>	
 
 	<form method="POST" action="{{route('articles.store')}}">

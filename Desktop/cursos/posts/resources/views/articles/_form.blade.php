@@ -1,8 +1,15 @@
 
  {{ csrf_field()}}
-
+ 	
  	<div class="form-group">
- 		<select class="mdb-select md-form" name="post_id" > 
+ 		<FONT FACE="raro, courier" SIZE=6 COLOR="blue">
+ Selecciona Tu categoria de POST</FONT>
+ 		<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01" name="post_id">
+ 
  			@foreach($posts as $post)
  				<option 
  				value="{{$post->id}}"
@@ -12,6 +19,7 @@
  				</option> 
  			@endforeach
  		</select> 
+ 	</div>
  	</div>
 
 
