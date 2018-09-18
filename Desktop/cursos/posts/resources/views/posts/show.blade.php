@@ -3,10 +3,13 @@
 
 @section('index-content')
 
-	<h3>AQUÍ PUEDES VER TU TWEET</h3>	
 	
-	<p>{{$post->title}}</p>
-	<p>{{$post->description}}</p>
+	
+
+  <FONT FACE="impact" SIZE=3 COLOR="blue" >
+ <h1 align="center">Aquí están tus articulos de 
+  <p>{{$post->title}}</p></h1></FONT>
+	
 
 	<a href="{{route('posts.edit',$post)}}">Editar Post</a>
 

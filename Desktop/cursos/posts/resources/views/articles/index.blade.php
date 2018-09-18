@@ -19,7 +19,7 @@
         </button>
       </h5>
 
-      <div > 
+      <div> 
   
         <a href="{{route('articles.edit', $article ) }}">
          <button class="btn btn-raised btn-danger" type="submit" name="submit_mult" value="Exportar" title="Exportar"> 

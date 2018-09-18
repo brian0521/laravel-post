@@ -58,11 +58,18 @@ class PostController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Post  $post
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show(Post $post, Request $request)
     {
         //
+       // dd($request->ajax());
+
+        if($request->ajax()){
+            return response()->json($post);
+        }
+   
         return view('posts/show', compact('post'));
 
     }
