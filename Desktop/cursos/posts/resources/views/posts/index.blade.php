@@ -14,6 +14,13 @@
 	  </a>
   		
 	</button>
+	<br>
+	<div>
+		@include('posts/_form_ajax')
+	</div>
+	
+
+
 	<br/>
 	<table class="table">
 		<thead>
@@ -21,7 +28,7 @@
 			<th>Description</th>
 			<th colspan="3"></th>
 		</thead>
-		<tbody>
+		<tbody class="add_tr">
 			@foreach($posts as $post)
 				<tr>
 					<td>
@@ -81,9 +88,7 @@
       <div class="modal-body">
         <h1 id="titulo_post"></h1>
 
-        <ul class="mis_articulos">
-        	<li>articulos 1</li>
-        </ul>
+        <p class="description_post"></p>
 
       </div>
       <div class="modal-footer">
@@ -103,7 +108,7 @@
 <script>
 	$(document).ready(function(){
 
-		$('.ocultar').hide(); //muestro mediante clase
+		$('.ocultar').hide(); //ocultar mediante clase
 
 		$(".boton_abrir_modal").click(function(){
 			var id = $(this).parents("tr").find('.my_id_class').text();
@@ -115,12 +120,11 @@
 					//console.log(data)
 					//$('#mostrar_contenido').append(data);
 					var post = data
-					console.log(post)
+					//console.log(post)
 
 					$('#titulo_post').html(post['title']);
+					$('.description_post').html(post['description']);
 
-					
-						
 
 					$('#exampleModal').modal('show');
 				}

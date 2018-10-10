@@ -38,8 +38,22 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //Recibe parametros del formulario para crear un 
+        //Recibe parametros del formulario para crear un nuevo post
         //dd($request);
+
+        if($request->ajax()){
+            
+            $post = new Post;
+            //dd($post);
+            $post->title = $request->title; 
+            //dd($post->title);
+            //dd($post);
+            $post->description = $request->description;
+            
+            $post->save();
+            return (String) view('posts._row_post', compact('post'));
+        }
+
 
         $post = new Post;
         //dd($post);
